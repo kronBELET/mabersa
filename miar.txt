@@ -2,3 +2,7 @@ hola lop
 lolopu
 tesoro la mia 
 master 1
+prueba merge 
+en la rama 1
+cambio 2 en rama1 
+
