@@ -9,8 +9,8 @@
 <body>
     <?php
         include '../db.php';
-        $sql= "select * from usuarios";
-        $resultado1=mysql_query($sql);
+        $sql= 'SELECT * FROM usuarios';
+        $resultado1= mysqli_query($conexion,$sql);
         
     ?>
     <div>
@@ -25,19 +25,20 @@
             </thead>
             <tbody>
                 <?php
-                    while($filas=mysql_fetch_assoc($resultado1)){
-
-                    }
+                    while($filas=mysqli_fetch_assoc($resultado1)){
+                        
+                   
                 ?>
-                <tr>
-                    <td><?php echo $filas['ID'] ?></td>
-                    <td><?php echo $filas['usuario'] ?></td>
-                    <td><?php echo $filas['email'] ?></td>
+                    <tr>
+                    <td><?php echo $filas['ID']; ?></td>
+                    <td><?php echo $filas['usuario']; ?></td>
+                    <td><?php echo $filas['email']; ?></td>
                     <td>
                         <a href="">Editar</a>
                         <a href="">Eliminar</a>
                     </td>
                 </tr>
+                <?php } ?>
             </tbody>
         </table>
     </div>
