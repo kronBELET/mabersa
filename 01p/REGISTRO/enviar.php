@@ -11,7 +11,7 @@
  
  
  mysqli_close($conexion);
- include("../LOGGIN/login.html");
- header("location:../LOGGIN/index.php");
+ //include("../LOGGIN/login.html");
+ header("location:../LOGGIN/login.php");
 
 ?>

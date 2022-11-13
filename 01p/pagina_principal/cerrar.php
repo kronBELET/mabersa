@@ -1,8 +1,8 @@
 <?php
 include("../db.php");
-include("../LOGGIN/login.html");
+include("../LOGGIN/login.php");
 session_destroy($conexion);
 
-header("Location: ../LOGGIN/login.html");
+header("Location: ../LOGGIN/login.php");
 
 ?>

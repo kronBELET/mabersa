@@ -1,5 +1,6 @@
 <?php
 include('../db.php');
+session_start();
 $usuario=$_POST['usuario'];
 $password=$_POST['password'];
 
@@ -11,18 +12,16 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_num_rows($resultado);
 
 if($filas){
-  
-    header("location: ../pagina_principal/index.html");
+   echo $_SESSION['usuario']; 
+  header("location: ../pagina_principal/");
 
 }else{
-    ?>
-    <?php
-    include("login.html");
+   
+    include("login.php");
 
-  ?>
-  <h1 class="bad">ERROR DE AUTENTIFICACION</h1>
-  <?php
+  echo "<h1 class='bad'>ERROR DE AUTENTIFICACION</h1>";
 
 }
 mysqli_free_result($resultado);
 mysqli_close($conexion);
+?>
