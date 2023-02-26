@@ -8,7 +8,7 @@
     echo '</strong>, <a href="cerrar.php">Cerrar sesion</a>';
   }else{
     // Si no está logueado lo redireccion a la página de login.";
-    echo "el man no esta logueado". $_SESSION['email'] ;
+   header("location: ../REGISTRO/registro.php");
   }
 ?>
 
