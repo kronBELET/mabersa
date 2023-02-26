@@ -34,8 +34,13 @@
                     <td><?php echo $filas['usuario']; ?></td>
                     <td><?php echo $filas['email']; ?></td>
                     <td>
-                        <a href="">Editar</a>
-                        <a href="">Eliminar</a>
+                        <!----editar---->
+                        <a href="editar.php?id=<?php echo $filas['ID']; ?>">Editar</a>
+                        <!----eliminar---->
+                        <form action="eliminar.php" method="post">
+                            <input type="hidden" value="<?php echo $filas['ID']?>" name="txtID"readonly>
+                            <td><input type="submit" value="Eliminar" name="btnEliminar"></td>
+                        </form>
                     </td>
                 </tr>
                 <?php } ?>
