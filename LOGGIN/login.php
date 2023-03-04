@@ -53,6 +53,7 @@ if($_POST){
    <p class="blanco">Contraseña <input type="password" placeholder="ingrese su contraseña" name="password"></p>
    <input class="btn btn-success" type="submit" value="Ingresar">
    <a href="../REGISTRO/registro.html">registro</a>
+   <a href="../pagina_principal/index.php">inicio</a>
    </form>
 </div> 
 
