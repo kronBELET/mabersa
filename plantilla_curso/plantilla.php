@@ -25,6 +25,10 @@
         <label for="imagen">URL de la imagen del curso</label>
         <input type="text" class="form-control" id="imagen" placeholder="Ingresa la URL de la imagen del curso">
     </div>
+    <div class="form-group">
+        <label for="video">URL del video de presentación</label>
+        <input type="text" class="form-control" id="video" placeholder="Ingresa la URL del video de presentación">
+    </div>
     <button type="submit" class="btn btn-primary">Crear curso</button>
     </form>
 
