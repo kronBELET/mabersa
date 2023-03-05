@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<?php include("../pagina_principal/header.php");  ?> 
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
 			<div class="col-md-6 col-sm-12">
@@ -38,5 +39,5 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+	<?php include("../pagina_principal/footer.php");  ?> 
