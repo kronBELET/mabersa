@@ -1,3 +1,7 @@
+.nav {
+    display: flex;
+}
+
 .header-area{
     background-color: orange;
 }

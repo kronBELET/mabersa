@@ -64,7 +64,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees">
+              <img src="../assets/images/service-01.png" alt="online degrees">
             </div>
             <div class="main-content">
               <h4>Grados en línea</h4>
@@ -78,7 +78,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
+              <img src="../assets/images/service-02.png" alt="short courses">
             </div>
             <div class="main-content">
               <h4>Cursos cortos</h4>
@@ -92,7 +92,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="service-item">
             <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
+              <img src="../assets/images/service-03.png" alt="web experts">
             </div>
             <div class="main-content">
               <h4>Web de expertos</h4>
@@ -204,7 +204,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
+              <a href="#"><img src="../assets/images/course-01.jpg" alt=""></a>
               <span class="category">Diseño web</span>
               <span class="price"><h6><em>$</em>160</h6></span>
             </div>
@@ -217,7 +217,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
+              <a href="#"><img src="../assets/images/course-02.jpg" alt=""></a>
               <span class="category">Desarrollo</span>
               <span class="price"><h6><em>$</em>340</h6></span>
             </div>
@@ -230,7 +230,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
+              <a href="#"><img src="../assets/images/course-03.jpg" alt=""></a>
               <span class="category">Trabajo</span>
               <span class="price"><h6><em>$</em>640</h6></span>
             </div>
@@ -243,7 +243,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
+              <a href="#"><img src="../assets/images/course-04.jpg" alt=""></a>
               <span class="category">Desarrollo</span>
               <span class="price"><h6><em>$</em>450</h6></span>
             </div>
@@ -256,7 +256,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
+              <a href="#"><img src="../assets/images/course-05.jpg" alt=""></a>
               <span class="category">Trabajo</span>
               <span class="price"><h6><em>$</em>320</h6></span>
             </div>
@@ -269,7 +269,7 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
+              <a href="#"><img src="../assets/images/course-06.jpg" alt=""></a>
               <span class="category">desarrollo</span>
               <span class="price"><h6><em>$</em>240</h6></span>
             </div>
@@ -326,7 +326,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-01.jpg" alt="">
+              <img src="../assets/images/member-01.jpg" alt="">
               <span class="category">UX Teacher</span>
               <h4>Jose Luis</h4>
               <ul class="social-icons">
@@ -340,7 +340,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-02.jpg" alt="">
+              <img src="../assets/images/member-02.jpg" alt="">
               <span class="category">Graphic Teacher</span>
               <h4>Juan camilo</h4>
               <ul class="social-icons">
@@ -354,7 +354,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-03.jpg" alt="">
+              <img src="../assets/images/member-03.jpg" alt="">
               <span class="category">Full Stack Master</span>
               <h4>El lucito69</h4>
               <ul class="social-icons">
@@ -368,7 +368,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-04.jpg" alt="">
+              <img src="../assets/images/member-04.jpg" alt="">
               <span class="category">Digital Animator</span>
               <h4>El michel</h4>
               <ul class="social-icons">
@@ -391,7 +391,7 @@
             <div class="item">
               <p>Por favor hablale a tus amigos de nuestra pagina, tenemos sistema de reconmendados con insentivos</p>
               <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
+                <img src="../assets/images/testimonial-author.jpg" alt="">
                 <span class="category">Graphic Teacher</span>
                 <h4>juan Camilo</h4>
               </div>
@@ -399,7 +399,7 @@
             <div class="item">
               <p>Aprovecha la oportunidad para aprender y construir tu futuro.</p>
               <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
+                <img src="../assets/images/testimonial-author.jpg" alt="">
                 <span class="category">Graphic Teacher</span>
                 <h4>Juan Camilo</h4>
               </div>
@@ -407,7 +407,7 @@
             <div class="item">
               <p>nuestros expertos pueden ayudarte en todo lo que necesites para que tengas una expereincia enriquesedora.</p>
               <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
+                <img src="../assets/images/testimonial-author.jpg" alt="">
                 <span class="category">Graphic Teacher</span>
                 <h4>Juan camilo</h4>
               </div>
@@ -439,7 +439,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
+                  <img src="../assets/images/event-01.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
@@ -471,7 +471,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-02.jpg" alt="">
+                  <img src="../assets/images/event-02.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
@@ -503,7 +503,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-03.jpg" alt="">
+                  <img src="../assets/images/event-03.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
