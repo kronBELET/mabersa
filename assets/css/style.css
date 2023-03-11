@@ -1,11 +1,15 @@
+
 .nav {
     display: flex;
 }
 
 .header-area{
-    background-color: orange;
+    background-color: rgb(221, 45, 74);
+    justify-content: flex-start;
+    top: 0;
+    
 }
 
 .background-header{
-    background-color: red !important;
+    background-color: rgb(238, 45, 94) !important;
 }

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../assets/css/style.css">
+ 
 <!--
 
 TemplateMo 586 Scholar
@@ -68,7 +69,7 @@ https://templatemo.com/tm-586-scholar
                       <li class="scroll-to-section"><a href="#services">Servicios</a></li>
                       <li class="scroll-to-section"><a href="#courses">Cursos</a></li>
                       <li class="scroll-to-section"><a href="#team">Equipo</a></li>
-                      <li class="scroll-to-section"><a href="../loggin/login.php">iniciar seccion</a></li>
+                      <li class="scroll-to-section"><a href="../login/login.php">iniciar seccion</a></li>
                       <li class="scroll-to-section"><a href="../REGISTRO/registro.php">Registrate ahora!</a></li><!--cambiar boton-->
                   </ul>   
                     <a class='menu-trigger'>

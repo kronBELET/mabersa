@@ -12,12 +12,12 @@
 </head>
 <body>
 	
-<header>
-	<Nav>
+<header class="arriba">
+	
 	<?php include("../pagina_principal/header.php");  ?> 
-	</Nav>
+	
 </header>
-<main>
+<main class="center">
     <div class="container mt-5">
         <h1 class="text-center mb-4">Iniciar Sesión</h1>
         <div class="row justify-content-center">
