@@ -65,7 +65,7 @@ https://templatemo.com/tm-586-scholar
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="../index.php" class="active">Inicio</a></li>
+                      <li class="scroll-to-section"><a href="../pagina_principal/index.php" class="active">Inicio</a></li>
                       <li class="scroll-to-section"><a href="#services">Servicios</a></li>
                       <li class="scroll-to-section"><a href="#courses">Cursos</a></li>
                       <li class="scroll-to-section"><a href="#team">Equipo</a></li>
