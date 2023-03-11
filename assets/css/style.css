@@ -13,3 +13,8 @@
 .background-header{
     background-color: rgb(238, 45, 94) !important;
 }
+
+.main-button a{
+    color: rgb(238, 45, 94) !important;
+    
+}
