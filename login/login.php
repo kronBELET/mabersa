@@ -18,8 +18,8 @@
 	
 </header>
 <main class="center">
-    <div class="container mt-5">
-        <h1 class="text-center mb-4">Iniciar Sesión</h1>
+	<h1 class="text-center mb-4">Iniciar Sesión</h1>
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <form action="login.php" method="post" class="form-center">

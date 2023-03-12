@@ -17,14 +17,20 @@
 }*/
 
 .arriba{
-    height: 100px;
+    height: 100%;
     width:100px;
 }
 
 .center{
+    margin-top: 150px;
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
+
+.center{
+    text-align: center;
+}
+
 
 h1 {
     font-weight: bold;

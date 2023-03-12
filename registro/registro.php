@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
 <?php include("../pagina_principal/header.php");  ?> 
+<main class="center">
     <div class="container">
         <form action="enviar.php" method="post">
             <h2 class="text-center mb-4">Registro</h2>
@@ -35,6 +37,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </div> 
+</main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
