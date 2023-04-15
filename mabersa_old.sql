@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-04-2023 a las 22:16:55
+-- Tiempo de generación: 04-03-2023 a las 19:02:05
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.4.27
 
@@ -20,20 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `mabersa`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `cursos`
---
-
-CREATE TABLE `cursos` (
-  `Nombredelcurso` varchar(2000) NOT NULL,
-  `Descripcióndelcurso` varchar(2000) NOT NULL,
-  `Nombredelinstructor` varchar(2000) NOT NULL,
-  `URLdelaimagendelcurso` varchar(2000) NOT NULL,
-  `URLdelvideodepresentació` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -55,9 +41,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `nombre`, `apellido`, `usuario`, `email`, `password`) VALUES
-(4, 'admin', 'min', 'admin', 'admin@gmail.com', 'admin123'),
-(5, 'capitulo', 'tulo', 'capitulo', 'capitulo@gmail.com', '1123'),
-(6, 'kronbelet', 'Giraldo', 'kronbelet', 'kronbelet@gmail.com', '$kiara2001');
+(4, 'admin', 'min', 'admin', 'admin@gmail.com', 'admin123');
 
 --
 -- Índices para tablas volcadas
@@ -77,7 +61,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

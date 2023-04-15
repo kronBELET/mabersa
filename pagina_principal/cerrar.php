@@ -1,8 +1,10 @@
 <?php
-include("../db.php");
-include("../LOGGIN/login.php");
-session_destroy($conexion);
 
-header("Location: ../LOGGIN/login.php");
-
+session_start();
+session_unset();
+session_destroy();
+header("Location: ../login/login.php");
+exit();
 ?>
+
+
