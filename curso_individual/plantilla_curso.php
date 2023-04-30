@@ -59,4 +59,6 @@
       <div class="col-md-8">
         <h2>Lecciones</h2>
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Lección 1: Título de la lección</a>
+          <a href="#" class="list-group-item list-group-item-action">Lección 1: Título de la lección</a
+
+

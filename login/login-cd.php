@@ -14,12 +14,14 @@ if(!empty($_POST)){
                 $user_id = $row["id_usuario"];
                 session_start();
                 $_SESSION["user_id"] = $user_id;
-                header("Location: ../pagina_principal/index.php");
+                header("Location: ../pagina_principal/index_login.php");
                 exit();
             } else {
-                print "<script>alert('Acceso invalido.');window.location='../login.php';</script>";
+                header("Location: ../login.php?error=1");
+                exit();
             }
         }
     }
 }
 ?>
+

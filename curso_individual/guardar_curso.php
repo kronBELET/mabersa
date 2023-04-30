@@ -10,21 +10,20 @@
     $url_video = $_POST['video'];
 
     // Prepara la consulta SQL para insertar los datos en la tabla "cursos"
-    $consulta2="INSERT INTO `cursos`( `Nombredelcurso`, `Descripcióndelcurso`, `Nombredelinstructor`, `URLdelaimagendelcurso`, `URLdelvideodepresentación`)  VALUES ('$nombre_curso,'$descripcion_curso','$nombre_instructor',' $url_imagen','$url_video')";
-    $resultado2=mysqli_query($conexion,$consulta2) or die("error de registro");
-    
-    
-    mysqli_close($conexion);
-    //include("../LOGGIN/login.html");
-    header("location:plantilla_curso.php");
+    $consulta2 = "INSERT INTO `cursos` (`Nombredelcurso`, `Descripcióndelcurso`, `Nombredelinstructor`, `URLdelaimagendelcurso`, `URLdelvideodepresentación`) VALUES ('$nombre_curso', '$descripcion_curso', '$nombre_instructor', '$url_imagen', '$url_video')";
+    mysqli_query($conexion, $consulta2) or die("error de registro");
 
-    // Ejecuta la consulta SQL y verifica si se guardaron los datos correctamente
-   /* if (mysqli_query($conexion, $consulta1)) {
+    // Verifica si la consulta SQL se ejecutó correctamente
+    if (mysqli_affected_rows($conexion) > 0) {
         echo "Los datos se han guardado correctamente.";
     } else {
-        echo "Error: " . $consulta1 . "<br>" . mysqli_error($conexion);
-    }*/
+        echo "Error: los datos no se pudieron guardar.";
+    }
 
     // Cierra la conexión a la base de datos
-    
+    mysqli_close($conexion);
+
+    // Redirige a la página plantilla_curso.php
+    header("location: plantilla_curso.php");
 ?>
+
