@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-04-2023 a las 22:16:55
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 7.4.27
+-- Tiempo de generación: 10-05-2023 a las 21:05:49
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,60 +24,118 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cursos`
+-- Estructura de tabla para la tabla `courses`
 --
 
-CREATE TABLE `cursos` (
-  `Nombredelcurso` varchar(2000) NOT NULL,
-  `Descripcióndelcurso` varchar(2000) NOT NULL,
-  `Nombredelinstructor` varchar(2000) NOT NULL,
-  `URLdelaimagendelcurso` varchar(2000) NOT NULL,
-  `URLdelvideodepresentació` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `courses` (
+  `c_id` int(11) NOT NULL,
+  `t_id` int(11) NOT NULL,
+  `course_name` varchar(255) NOT NULL,
+  `course_description` text DEFAULT NULL,
+  `video` varchar(255) DEFAULT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `courses`
+--
+
+INSERT INTO `courses` (`c_id`, `t_id`, `course_name`, `course_description`, `video`, `timestamp`) VALUES
+(1, 1, 'creacion de comic', 'daras vida a tus historias ', 'uploads/645b8db60b8cd.mp4', '2023-05-10 12:27:34');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `enrollment`
 --
 
-CREATE TABLE `usuarios` (
-  `ID` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `apellido` varchar(100) NOT NULL,
-  `usuario` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `enrollment` (
+  `e_id` int(11) NOT NULL,
+  `u_id` int(11) NOT NULL,
+  `c_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Estructura de tabla para la tabla `users`
 --
 
-INSERT INTO `usuarios` (`ID`, `nombre`, `apellido`, `usuario`, `email`, `password`) VALUES
-(4, 'admin', 'min', 'admin', 'admin@gmail.com', 'admin123'),
-(5, 'capitulo', 'tulo', 'capitulo', 'capitulo@gmail.com', '1123'),
-(6, 'kronbelet', 'Giraldo', 'kronbelet', 'kronbelet@gmail.com', '$kiara2001');
+CREATE TABLE `users` (
+  `u_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `role` enum('teacher','student','admin') NOT NULL DEFAULT 'student',
+  `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`u_id`, `name`, `email`, `password`, `role`, `timestamp`) VALUES
+(1, 'kron', 'kronbelet@gmail.com', 'd934340eb29cd2353af5826c8126c5ea', 'admin', '2023-05-10 12:26:42'),
+(2, 'estudiante', 'estudiante@gmail.com', '202cb962ac59075b964b07152d234b70', 'student', '2023-05-10 16:38:58'),
+(3, 'maestro', 'maestro@gmail.com', '202cb962ac59075b964b07152d234b70', 'teacher', '2023-05-10 16:40:48');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `courses`
 --
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`ID`);
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`c_id`);
+
+--
+-- Indices de la tabla `enrollment`
+--
+ALTER TABLE `enrollment`
+  ADD PRIMARY KEY (`e_id`),
+  ADD KEY `u_id` (`u_id`),
+  ADD KEY `c_id` (`c_id`);
+
+--
+-- Indices de la tabla `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`u_id`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT de la tabla `courses`
 --
-ALTER TABLE `usuarios`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE `courses`
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `enrollment`
+--
+ALTER TABLE `enrollment`
+  MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `users`
+--
+ALTER TABLE `users`
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `enrollment`
+--
+ALTER TABLE `enrollment`
+  ADD CONSTRAINT `enrollment_ibfk_1` FOREIGN KEY (`u_id`) REFERENCES `users` (`u_id`),
+  ADD CONSTRAINT `enrollment_ibfk_2` FOREIGN KEY (`c_id`) REFERENCES `courses` (`c_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
